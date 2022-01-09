@@ -73,7 +73,13 @@ def lock_in_agent():
     lockin = pyautogui.locateOnScreen('./images/lockin.png', confidence = 0.8)
     if (lockin != None):
         pyautogui.doubleClick(lockin)
-        exit()
+        while True:
+            lockin = pyautogui.locateOnScreen('./images/lockin.png', confidence = 0.8)
+            if (lockin !=None):
+                pyautogui.moveTo(960, 865)
+                pyautogui.doubleClick(lockin)
+            else:
+                exit()
 
 def Agent_Astra():
     waiting_agent()
@@ -81,7 +87,7 @@ def Agent_Astra():
         astra = pyautogui.locateOnScreen('./images/astra.png', confidence = 0.8)
         if (astra != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(astra)
             lock_in_agent()
 def Agent_Breach():
@@ -90,7 +96,7 @@ def Agent_Breach():
         breach = pyautogui.locateOnScreen('./images/breach.png', confidence = 0.8)
         if (breach != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(breach)
             lock_in_agent()
 def Agent_Brimstone():
@@ -99,7 +105,7 @@ def Agent_Brimstone():
         brimstone = pyautogui.locateOnScreen('./images/brimstone.png', confidence = 0.8)
         if (brimstone != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(brimstone)
             lock_in_agent()
 def Agent_Chamber():
@@ -108,7 +114,7 @@ def Agent_Chamber():
         chamber = pyautogui.locateOnScreen('./images/chamber.png', confidence = 0.8)
         if (chamber != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(chamber)
             lock_in_agent()
 def Agent_Cypher():
@@ -117,7 +123,7 @@ def Agent_Cypher():
         cypher = pyautogui.locateOnScreen('./images/cypher.png', confidence = 0.8)
         if (cypher != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(cypher)
             lock_in_agent()
 def Agent_Jett():
@@ -126,7 +132,7 @@ def Agent_Jett():
         jett = pyautogui.locateOnScreen('./images/jett.png', confidence = 0.8)
         if (jett != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(jett)
             lock_in_agent()
 def Agent_Kayo():
@@ -135,7 +141,7 @@ def Agent_Kayo():
         kayo = pyautogui.locateOnScreen('./images/kayo.png', confidence = 0.8)
         if (kayo != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(kayo)
             lock_in_agent()
 def Agent_KillJoy():
@@ -144,7 +150,7 @@ def Agent_KillJoy():
         killjoy = pyautogui.locateOnScreen('./images/killjoy.png', confidence = 0.8)
         if (killjoy != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(killjoy)
             lock_in_agent()
 def Agent_Omen():
@@ -153,7 +159,7 @@ def Agent_Omen():
         omen = pyautogui.locateOnScreen('./images/omen.png', confidence = 0.8)
         if (omen != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(omen)
             lock_in_agent()
 def Agent_Pheonix():
@@ -162,7 +168,7 @@ def Agent_Pheonix():
         pheonix = pyautogui.locateOnScreen('./images/pheonix.png', confidence = 0.8)
         if (pheonix != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(pheonix)
             lock_in_agent()
 def Agent_Raze():
@@ -171,7 +177,7 @@ def Agent_Raze():
         raze = pyautogui.locateOnScreen('./images/raze.png', confidence = 0.8)
         if (raze != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(raze)
             lock_in_agent()
 def Agent_Reyna():
@@ -180,7 +186,7 @@ def Agent_Reyna():
         reyna = pyautogui.locateOnScreen('./images/reyna.png', confidence = 0.8)
         if (reyna != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(reyna)
             lock_in_agent()
 def Agent_Sage():
@@ -189,7 +195,7 @@ def Agent_Sage():
         sage = pyautogui.locateOnScreen('./images/sage.png', confidence = 0.8)
         if (sage != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(sage)
             lock_in_agent()
 def Agent_Skye():
@@ -198,7 +204,7 @@ def Agent_Skye():
         skye = pyautogui.locateOnScreen('./images/skye.png', confidence = 0.8)
         if (skye != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(skye)
             lock_in_agent()
 def Agent_Sova():
@@ -207,7 +213,7 @@ def Agent_Sova():
         sova = pyautogui.locateOnScreen('./images/sova.png', confidence = 0.8)
         if (sova != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(sova)
             lock_in_agent()
 def Agent_Viper():
@@ -216,7 +222,7 @@ def Agent_Viper():
         viper = pyautogui.locateOnScreen('./images/viper.png', confidence = 0.8)
         if (viper != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(viper)
             lock_in_agent()
 def Agent_Yoru():
@@ -225,7 +231,7 @@ def Agent_Yoru():
         yoru = pyautogui.locateOnScreen('./images/yoru.png', confidence = 0.8)
         if (yoru != None):
             pyautogui.moveTo(960, 865)
-            time.sleep(0.3)
+            time.sleep(0.2)
             pyautogui.doubleClick(yoru)
             lock_in_agent()
 
