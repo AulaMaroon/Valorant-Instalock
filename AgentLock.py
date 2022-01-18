@@ -31,6 +31,7 @@ def wait():
     print('15. Sova')
     print('16. Viper')
     print('17. Yoru')
+    print('18. Neon')
     print()
     agent = input('Select The Agent You Want To Insta Lock : ')
     agent = int(agent)
@@ -68,6 +69,8 @@ def wait():
         Agent_Viper()
     if agent == 17:
         Agent_Yoru()
+    if agent == 18:
+        Agent_Neon()
 
 def lock_in_agent():
     lockin = pyautogui.locateOnScreen('./images/lockin.png', confidence = 0.8)
@@ -234,7 +237,15 @@ def Agent_Yoru():
             time.sleep(0.2)
             pyautogui.doubleClick(yoru)
             lock_in_agent()
-
+def Agent_Neon():
+    waiting_agent()
+    while True:
+        neon = pyautogui.locateOnScreen('./images/neon.png', confidence = 0.8)
+        if (neon != None):
+            pyautogui.moveTo(960, 865)
+            time.sleep(0.2)
+            pyautogui.doubleClick(neon)
+            lock_in_agent()
 def logo():
     os.system('cls')
     print("""                _       __  __                             
